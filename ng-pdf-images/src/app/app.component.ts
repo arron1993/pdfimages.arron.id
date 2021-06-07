@@ -14,7 +14,6 @@ export class AppComponent {
   images = [];
 
   onSubmit(form) {
-    console.log(form);
     this.us.upload(this.fileToUpload).subscribe((resp: any) => {
       this.images = resp.images;
     });
