@@ -1,0 +1,7 @@
+.upload-section {
+  height: 50vh;
+  transition: height 0.3s ease-in-out;
+  &.shrink {
+    height: 15vh;
+  }
+}
