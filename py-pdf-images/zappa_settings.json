@@ -1,0 +1,9 @@
+{
+  "prod": {
+    "aws_region": "eu-west-2",
+    "runtime": "python3.8",
+    "cors": true,
+    "s3_bucket": "pdfimages.arron.id",
+    "app_function": "main.app"
+  }
+}

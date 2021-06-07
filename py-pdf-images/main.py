@@ -4,11 +4,15 @@ import base64
 import os
 from flask import Flask, request
 from flask.views import MethodView
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
 class PdfAPI(MethodView):
+    def get(self):
+        return "OK"
 
     def post(self):
         with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
